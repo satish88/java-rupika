@@ -8,6 +8,7 @@ public class Marriage {
             return("Male not eligible for marriage.");
         }
     }
+
     public String femaleEligibility(int age){
 
         if (age > 18 || age == 18){

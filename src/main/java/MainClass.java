@@ -29,7 +29,7 @@ public class MainClass {
         result = calculate.calculateDaysInYear(2010);
         System.out.println(result + " Days");
 
-        // Marriage eligibility check on gender basis;
+        // Marriage eligibility check on gender & age basis;
         Marriage marriage = new Marriage();
         result1 = marriage.maleEligibility(21);
         System.out.println(result1);
