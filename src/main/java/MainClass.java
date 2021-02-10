@@ -37,5 +37,10 @@ public class MainClass {
         result1 = marriage.femaleEligibility(18);
         System.out.println(result1);
 
+
+        //Traffic Signal directions;
+        TrafficSignal signal = new TrafficSignal();
+        result1 = signal.direction("Yellow");
+        System.out.println(result1);
     }
 }
