@@ -18,7 +18,7 @@ public class MainClass {
 
         //FarmAnimal sound;
         FarmAnimal animal = new FarmAnimal();
-        String result1 = animal.Sounds("Cow");
+        String result1 = animal.Sounds("Horse");
         System.out.println(result1);
 
         //Days in Month or Year;
@@ -29,6 +29,13 @@ public class MainClass {
         result = calculate.calculateDaysInYear(2010);
         System.out.println(result + " Days");
 
+        // Marriage eligibility check on gender basis;
+        Marriage marriage = new Marriage();
+        result1 = marriage.maleEligibility(21);
+        System.out.println(result1);
+
+        result1 = marriage.femaleEligibility(18);
+        System.out.println(result1);
 
     }
 }
