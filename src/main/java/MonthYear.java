@@ -3,7 +3,7 @@ public class MonthYear {
     public int calculateDaysInMonth(String month){
         System.out.println("Make sure you provide first letter capital in Input name!");
 
-        if (month=="January") {
+        if (month=="January" || month== "March" || month== "May"||month== "July"|| month== "August" ||month== "October"||month== "December") {
             int x = 31;
             System.out.println(month + " has 31 days.");
             return (x);
@@ -13,36 +13,7 @@ public class MonthYear {
             System.out.println("February has 28 or 29 days.");
             return (y);
         }
-        if (month == "March") {
-            int x = 31;
-            System.out.println(month + " has 31 days.");
-            return (x);
-        }
-        if (month == "May") {
-            int x = 31;
-            System.out.println(month + " has 31 days.");
-            return (x);
-        }
-        if (month == "July") {
-            int x = 31;
-            System.out.println(month + " has 31 days.");
-            return (x);
-        }
-        if (month == "August") {
-            int x = 31;
-            System.out.println(month + " has 31 days.");
-            return (x);
-        }
-        if (month == "October") {
-            int x = 31;
-            System.out.println(month + " has 31 days.");
-            return (x);
-        }
-        if (month == "December") {
-            int x = 31;
-            System.out.println(month + " has 31 days.");
-            return (x);
-        }
+
 
         else{
             int z = 30;
@@ -61,7 +32,7 @@ public class MonthYear {
         }
         else{
             int y = 365;
-            System.out.println(yearname + " has 365 Days. ");
+            System.out.println(yearname + " has  Days. ");
             return (y);
         }
     }
