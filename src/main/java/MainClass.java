@@ -40,7 +40,14 @@ public class MainClass {
 
         //Traffic Signal directions;
         TrafficSignal signal = new TrafficSignal();
-        result1 = signal.direction("Yellow");
+        result1 = signal.direction("Green");
         System.out.println(result1);
+
+
+        //National symbols of India;
+        NationalSymbol symbol = new NationalSymbol();
+        result1 = symbol.indianSymbol("Fruit");
+        System.out.println(result1);
+
     }
 }
