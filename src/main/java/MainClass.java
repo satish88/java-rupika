@@ -31,10 +31,7 @@ public class MainClass {
 
         // Marriage eligibility check on gender & age basis;
         Marriage marriage = new Marriage();
-        result1 = marriage.maleEligibility(21);
-        System.out.println(result1);
-
-        result1 = marriage.femaleEligibility(18);
+        result1 = marriage.eligibility("Male", 45 );
         System.out.println(result1);
 
 
