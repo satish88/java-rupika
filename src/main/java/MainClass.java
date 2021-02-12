@@ -1,50 +1,51 @@
 public class MainClass {
     public static void main(String[] args){
-
-        //Mathematical Operations;
-        Mathematics operation = new Mathematics();
-        int result = operation.addition(8, 9);
-        System.out.println(result);
-
-        result = operation.substraction(18, 7);
-        System.out.println(result);
+         int result;
+         String result1;
+         float result2;
 
 
-        result = operation.multiplication(45, 2);
-        System.out.println(result);
+        //Calculator;
+        Calculator operation = new Calculator();
+        result2 = operation.calculation('-',0.5f, 2.5f);
+        System.out.println(result2);
 
-        result = operation.division(64, 7);
-        System.out.println(result);
 
         //FarmAnimal sound;
         FarmAnimal animal = new FarmAnimal();
-        String result1 = animal.Sounds("Horse");
+        result1 = animal.Sounds("horse");
         System.out.println(result1);
 
         //Days in Month or Year;
         MonthYear calculate = new MonthYear();
         result = calculate.calculateDaysInMonth("February");
-        System.out.println(result + " Days");
+        System.out.println(result + " days");
 
         result = calculate.calculateDaysInYear(2010);
-        System.out.println(result + " Days");
+        System.out.println(result + " days");
 
         // Marriage eligibility check on gender & age basis;
         Marriage marriage = new Marriage();
-        result1 = marriage.eligibility("Male", 45 );
+        result1 = marriage.eligibility("male", 45 );
         System.out.println(result1);
 
 
         //Traffic Signal directions;
         TrafficSignal signal = new TrafficSignal();
-        result1 = signal.direction("Green");
+        result1 = signal.direction("green");
         System.out.println(result1);
 
 
         //National symbols of India;
         NationalSymbol symbol = new NationalSymbol();
-        result1 = symbol.indianSymbol("Fruit");
+        result1 = symbol.indianSymbol("fruit");
         System.out.println(result1);
+
+
+        // Interest Calculation;
+        Interest simpleInterest = new Interest();
+        result2 = simpleInterest.calculateSimpleInterest(400, 4, "halfYearly", 2, "year");
+        System.out.println(result2);
 
     }
 }

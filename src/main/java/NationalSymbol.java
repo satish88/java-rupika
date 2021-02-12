@@ -1,45 +1,45 @@
 public class NationalSymbol {
     public String indianSymbol(String type){
-        if (type == "Flag" ) {
+        if (type == "flag" ) {
             return("Tiranga");
         }
-        if (type == "Anthem" ) {
+        if (type == "anthem" ) {
             return("Jana gana mana");
         }
-        if (type == "Song") {
+        if (type == "song") {
             return("Vande Matram");
         }
-        if (type == "Currency") {
+        if (type == "currency") {
             return("Indian Rupee");
         }
-        if (type =="River" ) {
+        if (type =="river" ) {
             return("Ganga");
         }
-        if (type == "Flower") {
+        if (type == "flower") {
             return("Indian Lotus");
         }
-        if (type == "Fruit" ) {
+        if (type == "fruit" ) {
             return("Mango");
         }
-        if (type == "Tree") {
+        if (type == "tree") {
             return("Indian Banyan");
         }
-        if (type == "Animal") {
+        if (type == "animal") {
             return("Bengal Tiger");
         }
-        if (type == "Bird") {
+        if (type == "bird") {
             return("Indian Peacock");
         }
-        if (type == "Aquatic animal" ) {
+        if (type == "aquatic animal" ) {
             return("Ganges river Dolphin");
         }
-        if (type == "Reptile") {
+        if (type == "reptile") {
             return("King Cobra");
         }
-        if (type == "Game") {
+        if (type == "game") {
             return("Hockey");
         }
-        if (type == "Book") {
+        if (type == "book") {
             return("Gita");
         }
         else{

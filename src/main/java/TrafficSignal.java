@@ -1,13 +1,13 @@
 public class TrafficSignal {
     public String direction(String signalColour){
 
-        if(signalColour == "Red"){
+        if(signalColour == "red"){
             return("Red says Stop!");
         }
-        if(signalColour == "Yellow"){
+        if(signalColour == "yellow"){
             return("Yellow says Stop & Wait!");
         }
-        if(signalColour == "Green"){
+        if(signalColour == "green"){
             return("Green says Go!");
         }
         else{

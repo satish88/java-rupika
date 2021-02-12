@@ -1,43 +1,42 @@
 public class FarmAnimal {
 
     public String Sounds(String name){
-        System.out.println("Make sure you provide first letter capital in Animal name!");
-        if (name == "Dog"){
+        if (name == "dog"){
             String s = ("bark or woof");
             return(name + " sounds " + s);
         }
 
-        if (name == "Cat") {
+        if (name == "cat") {
             String s = ("meow");
             return(name + " sounds " + s);
         }
 
-        if (name == "Pig") {
+        if (name == "pig") {
             String s = ("oink");
             return(name + " sounds " + s);
         }
 
-        if (name == "Sheep") {
+        if (name == "sheep") {
             String s = ("baa");
             return(name + " sounds " + s);
         }
 
-        if (name == "Cow") {
+        if (name == "cow") {
             String s = ("moo");
             return(name + " sounds " + s);
         }
 
-        if (name == "Horse") {
+        if (name == "horse") {
             String s = ("neigh");
             return(name + " sounds " + s);
         }
 
-        if (name == "Duck") {
+        if (name == "duck") {
             String s = ("quack");
             return(name + " sounds " + s);
         }
 
-        if (name == "Chicken") {
+        if (name == "chicken") {
             String s = ("cluck");
             return(name + " sounds " + s);
         }
