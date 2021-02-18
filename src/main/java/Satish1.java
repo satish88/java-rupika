@@ -22,5 +22,4 @@ public class Satish1 {
         System.out.println("Input year is:" + year);
     }
 
-
 }
