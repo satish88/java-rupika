@@ -11,6 +11,7 @@ public class YuktiFactorialTest {
         Assert.assertEquals(result, "result1 is too large.", "Calculate the 99!");
     }
 
+    // Test 2 is for negative Integer.
     @Test
     public void calculateNegativeIntegerFactorial() {
         Factorial test2 = new Factorial();
@@ -18,7 +19,7 @@ public class YuktiFactorialTest {
         Assert.assertEquals(result, -56, "Provide positive number input!");
     }
 
-
+    // Test 3 is for Zero factorial.
     @Test
     public void calculateZeroFactorial() {
         Factorial test3 = new Factorial();
