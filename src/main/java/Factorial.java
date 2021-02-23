@@ -1,4 +1,5 @@
 public class Factorial {
+
     //how to calculate n factorial;
     public static int calculate(int n){
         int result = 1;
