@@ -19,7 +19,7 @@ public class Factorial {
     }
 
     public static void main(String[] args){
-         long result = calculate(20);
+         long result = calculate(21);
         System.out.println(result);
 
     }
