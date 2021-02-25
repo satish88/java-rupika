@@ -1,7 +1,7 @@
 public class Factorial {
     //how to calculate n factorial where 20>= n>=1;
-    public static Long calculate(int n){
-        Long result = 1l;
+    public static long calculate(int n){
+        long result = 1l;
         if(20 >= n && n >=1) {
             for (int counter = n; counter >= 1; counter = counter - 1) {
                 result = result * counter;
@@ -19,7 +19,7 @@ public class Factorial {
     }
 
     public static void main(String[] args){
-         Long result = calculate(20);
+         long result = calculate(20);
         System.out.println(result);
 
     }
