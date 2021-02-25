@@ -23,7 +23,7 @@ public class NumberSeries {
                 }
             }
         }
-//        if (a <=0 && target < a ){
+//       if (a <=0 && target < a ){
 //            for (int counter = a; counter >= target; counter = counter - 1) {
 //                if (counter % 3 == 0 || counter % 5 == 0) {
 //                    result = result + counter;
@@ -44,7 +44,7 @@ public class NumberSeries {
 
 
     public static void main(String[]args){
-        int result = sum(3,-5);
+        int result = sum(1, -2);
         System.out.println(result);
     }
 }
