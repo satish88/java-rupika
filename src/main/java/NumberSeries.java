@@ -44,7 +44,7 @@ public class NumberSeries {
 
 
     public static void main(String[]args){
-        int result = sum(1, -2);
+        int result = sum(1, -4);
         System.out.println(result);
     }
 }
