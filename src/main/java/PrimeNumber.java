@@ -1,10 +1,10 @@
 public class PrimeNumber {
 
     public static String calculatePrimeNumber(int n) {
-        String result = "Prime Number";
+        String result = "Prime number";
 
         if (n <= 1) {
-            result = "Not Prime Number";
+            result = "Not Prime number";
         }
         else if (n == 2) {
             result = "Prime number";
