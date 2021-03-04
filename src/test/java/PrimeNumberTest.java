@@ -6,20 +6,20 @@ public class PrimeNumberTest {
     @Test
     public void testForCheckingTwoIsPrimeNumberOrNot(){
         PrimeNumber number= new PrimeNumber();
-        String result = number. calculatePrimeNumber(2);
-        assertEquals(result, "Prime number", "Is 2 a Prime Number?" );
+        boolean result = number. checkPrimeNumber(2);
+        assertEquals(result, true, "Is 2 a prime number");
     }
     @Test
     public void testForCheckingPrimeNumberGreaterThanTwo(){
         PrimeNumber number= new PrimeNumber();
-        String result = number. calculatePrimeNumber(6);
-        assertEquals(result, "Not Prime number", "Is 6 a Prime Number?" );
+        boolean result = number. checkPrimeNumber(7);
+        assertEquals(result, true, "Is 7 a prime number");
     }
     @Test
     public void testForCheckingPrimeNumberLessThanTwo(){
         PrimeNumber number= new PrimeNumber();
-        String result = number. calculatePrimeNumber(1);
-        assertEquals(result, "Not Prime number", "Is 1 a Prime Number?" );
+        boolean result = number. checkPrimeNumber(1);
+        assertEquals(result, false, "Is 1 a prime number");
     }
 
 }
