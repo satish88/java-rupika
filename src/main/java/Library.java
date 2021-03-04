@@ -1,52 +1,59 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Library {
-    // library
-      //name
-      //id
-      // employees
-      // users
-      // books
-
-    // librarian
-      // name
-      //age
-      // id
-      //gender
-    // add members method
-    //remove members method
+    public List<Book> books;
+    public List<User> users;
 
 
-    // Users
-      //name
-      //age
-      //id
-      // check details method
-      // issue book method
-      //fine collection method
-      //issue method
-      //return method
+    public void createUser() {
 
-    // book
-      //book name
-      //book id
-      // issue method
-      // return method
+    }
+
+    public void createBook(String bookName, String authorName, int id) {
+        Book book = new Book();
+        book.bookName = bookName;
+        book.authorName = authorName;
+        book.id = id;
+        books.add(book);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("What do you want to do?");
+        // Create User - 1
+        // Enter Book - 2
+        // Issue Book - 3
 
 
-    // Catalog
-       //book name
-       // publisher
-       // book id
-       //availibility status
 
-    // transaction
-      // purchase
-      //fine
-      //purchase method
-      //fine collection method
 
-    // record
-     // books purchsed
-     //books issued
-     // books return
-     // fine collection
+        Librarian jyoti = new Librarian();
+
+
+
+        Book book2 = new Book();
+        book2.bookName = "HBC";
+
+
+        Library library = new Library();
+        library.books = new ArrayList<>();
+
+        library.createBook("PremChand", "rupika", 1);
+        library.books.add(book2);
+
+        for (int i = 0; i < library.books.size(); i++) {
+            Book book = library.books.get(i);
+            System.out.println(book.bookName);
+
+        }
+
+
+
+
+
+
+        User user = new User();
+        user.username = "Yukti";
+
+    }
 }

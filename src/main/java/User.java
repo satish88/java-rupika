@@ -1,6 +1,7 @@
 public class User {
      String username;
      int id ;
+
      public void bookIssue( String bookname){
           String booksIssued = (bookname);
           System.out.println(booksIssued);
