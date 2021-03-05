@@ -74,7 +74,7 @@ public class NumberSeries {
           }
           else{
               for(int counter = 1; counter >=n; counter--){
-                  result = result + result ;
+                  result = result + counter ;
               }
           }
       }
@@ -103,7 +103,7 @@ public class NumberSeries {
         result = seriesSum(-3);
         System.out.println(result);
 
-        result = calculateForSeries(-4, "multiply");
+        result = calculateForSeries(-5, "sum");
         System.out.println(result);
     }
 }
