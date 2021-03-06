@@ -44,4 +44,48 @@ public class YuktiNumberSeriesTest {
         int total2 = NumberSeries.seriesSum(0);
         Assert.assertEquals(total2, 1);
     }
+
+
+    //test for getting option b/w multiply and sum
+    @Test
+    public void positiveInputForMultiplication() {
+        NumberSeries test = new NumberSeries();
+        long product = NumberSeries.calculateForSeries(15, "multiply");
+        Assert.assertEquals(product, 1307674368000L, "Multiply the series till 15.");
+    }
+
+    @Test
+    public void negativeInputForMultiply() {
+        NumberSeries test = new NumberSeries();
+        long product1 = NumberSeries.calculateForSeries(-20, "multiply");
+        Assert.assertEquals(product1, 2432902008176640000l, "Multiply the series till -20");
+    }
+
+    @Test
+    public void multiplyWithZeroInput() {
+        NumberSeries test = new NumberSeries();
+        int product2 = NumberSeries.calculateForSeries(0, "multiply");
+        Assert.assertEquals(product2, 0, "When you multiply any number with 0 what is the result?");
+    }
+
+    @Test
+    public void sumOfPositiveInteger() {
+        NumberSeries test = new NumberSeries();
+        int sum = NumberSeries.calculateForSeries(20, "sum");
+        Assert.assertEquals(sum, 210);
+    }
+
+    @Test
+    public void sumOfNegativeInput() {
+        NumberSeries test = new NumberSeries();
+        int sum1 = NumberSeries.calculateForSeries(-10, "sum");
+        Assert.assertEquals(sum1, -54);
+    }
+
+    @Test
+    public void sumOfZeroInput() {
+        NumberSeries test = new NumberSeries();
+        int sum2 = NumberSeries.calculateForSeries(0, "sum");
+        Assert.assertEquals(sum2, 1);
+    }
 }
