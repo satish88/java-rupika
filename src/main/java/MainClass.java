@@ -3,7 +3,7 @@ public class MainClass {
          int result;
          String result1;
          float result2;
-
+         boolean result3;
 
         //Calculator;
         Calculator operation = new Calculator();
@@ -21,7 +21,10 @@ public class MainClass {
         result = calculate.calculateDaysInMonth("February");
         System.out.println(result + " days");
 
-        result = calculate.calculateDaysInYear(2010);
+        result3 = calculate.checkLeapYear(2010);
+        System.out.println(result3);
+
+        result = calculate.calculateDaysInYear(2020);
         System.out.println(result + " days");
 
         // Marriage eligibility check on gender & age basis;
