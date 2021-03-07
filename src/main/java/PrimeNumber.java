@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class PrimeNumber {
     //To check whether a number n is prime or not;
     public static boolean checkPrimeNumber(int n) {
@@ -22,8 +25,10 @@ public class PrimeNumber {
     }
 
     // To generate prime numbers from 1 to n.
-    public static int generatePrimeNumber(int n) {
+    public static List<Integer> generatePrimeNumber(int n) {
         int number = 2;
+        List<Integer>primeNumber = new ArrayList();
+
         if (n == 0 || n == 1) {
             System.out.println( " Provide input more than 1");
         }  else if (n >= 2) {
@@ -31,12 +36,13 @@ public class PrimeNumber {
             while (number <= n) {
 
                 if (checkPrimeNumber(number)) {
-                    System.out.println("prime number " + number);
+                    //System.out.println("prime number " + number);
+                    primeNumber.add(number);
                 }
                 number = number + 1;
             }
         }
-        return number;
+        return primeNumber;
     }
 
     // number =4, 4<10, 4%2= 0   not prime
@@ -44,8 +50,10 @@ public class PrimeNumber {
         boolean result = checkPrimeNumber(5);
         System.out.println(result);
 
-        int result1 = generatePrimeNumber(25);
-
+        List <Integer> result1 = generatePrimeNumber(25);
+        for (int i = 0; i < result1.size(); i++ ) {
+            System.out.println(result1.get(i));
+        }
 
     }
 
