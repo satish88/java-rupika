@@ -1,8 +1,5 @@
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
-import java.util.List;
-
 import static org.testng.Assert.assertEquals;
 
 @Test
@@ -36,13 +33,6 @@ public class MonthYearTest {
         MonthYear day = new MonthYear();
         int daysInAYear = MonthYear.calculateDaysInYear(2100);
         assertEquals(daysInAYear, 365, "Year 2100 will have 356 days.");
-    }
-
-    public void printLeapYears() {
-        MonthYear years = new MonthYear();
-        List<Integer> year = MonthYear.printLeapYears(1895, 3);
-        List<Integer> expectedYears = Arrays.asList(1896, 1904, 1908);
-        assertEquals(year, expectedYears, "print next 3 leap years after 1895.");
     }
 
 }
