@@ -23,4 +23,16 @@ public class MonthYearTest {
         assertEquals(checkCentury, false, "1900 is not a leap year.");
     }
 
+    public void daysInAYear() {
+        MonthYear month = new MonthYear();
+        int day = MonthYear.calculateDaysInYear(1997);
+        assertEquals(day, 365, "1997 has 365 days.");
+    }
+
+    public void daysInACenturyYear() {
+        MonthYear day = new MonthYear();
+        int daysInAYear = MonthYear.calculateDaysInYear(2100);
+        assertEquals(daysInAYear, 365, "Year 2100 will have 356 days.");
+    }
+
 }
