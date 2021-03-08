@@ -27,4 +27,11 @@ public class YuktiPrimeNumber {
         assertEquals(print, expect, "what is the prime numbers till 0.");
     }
 
+    public void printPositivePrimeNumbers() {
+        PrimeNumber test = new PrimeNumber();
+        List<Integer> print1 = PrimeNumber.generatePrimeNumber(30);
+        List<Integer> expectedNumbers = Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29);
+        assertEquals(print1, expectedNumbers, "print prime numbers from 1 to 30.");
+    }
+
 }
