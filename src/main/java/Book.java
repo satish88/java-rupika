@@ -1,6 +1,7 @@
 public class Book {
     public String authorName;
-    public int id;
+    public int bookID;
     String bookName;
+    boolean availablityStatus;
 
 }
