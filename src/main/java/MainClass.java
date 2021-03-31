@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainClass {
@@ -13,6 +14,12 @@ public class MainClass {
         System.out.println("4. Issue Book");
         System.out.println("5.Show all Users");
         System.out.println("6. Exit");
+
+        Library library = new Library();
+        library.books = new ArrayList<>();
+        library.users = new ArrayList<>();
+        library.librarians = new ArrayList<>();
+
 
         while (true){
             Scanner myObj = new Scanner(System.in);
@@ -41,7 +48,6 @@ public class MainClass {
                 System.out.println("Author name");
                 myObj = new Scanner(System.in);
                 String authorName = myObj.nextLine();
-                Library library = new Library();
                 Library.createBook(Library.books.size()+1, bookName , authorName);
                 System.out.println("Book added");
 
